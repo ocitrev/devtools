@@ -1,0 +1,21 @@
+﻿Development Tools
+=================
+
+Little tools to help software development.
+
+sln_tool
+--------
+
+Utility used to parse, sort inspect Visual Studio Solution `.sln` files.
+Various operations are available:
+
+#### Sorting projects in a solution file
+
+- Thes command `SORT` will sort by alphabetical order all the projects of a solution file.
+  An optional output filename can be supplied to preserve the original `.sln` file
+
+#### Checking project dependencies
+
+- The command `USING` will load the solution file and find projects that have the specified project as a dependency.
+- The command `DEPENDS` will load the solution file and find all dependencies for the specified project.
+  If a project is not specified all dependencies are listed.
